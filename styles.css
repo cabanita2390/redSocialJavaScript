@@ -1,0 +1,102 @@
+body::before {
+    content: "";
+    background-image: url(/images/fondo.jpg); /* Ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla sin perder la relación de aspecto */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    position: fixed;
+    top: -5%; /* Ajusta el valor negativo según sea necesario */
+    left: -5%; /* Ajusta el valor negativo según sea necesario */
+    width: 110%; /* Ajusta el valor superior a 100% para extender la imagen más allá del área visible */
+    height: 110%; /* Ajusta el valor superior a 100% para extender la imagen más allá del área visible */
+    z-index: -1;
+    filter: grayscale(100%) blur(5px);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background-image: url(/images/fondo.jpg); /* Ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px; /* Aumentamos el padding para hacer el formulario más grande */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 30rem; /* Establecemos un ancho fijo para el formulario */
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+label {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px; /* Ajustar el espaciado interior según sea necesario */
+    border-radius: 5px; /* Redondear las esquinas */
+    color: gray; /* Cambiar el color del texto a blanco o un tono claro */
+    width: 20rem;
+}
+
+#contraseña {
+    margin-top: 28px;
+}
+
+input {
+    padding: 10px; /* Aumentamos el padding para hacer los campos más grandes */
+    margin-bottom: 16px;
+}
+
+button {
+    padding: 12px; /* Aumentamos el padding para hacer el botón más grande */
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.bienvenida-message {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    width: 75%;
+    padding-top: 150px;
+}
+
+.error-message {
+    position: absolute;
+    top: 31rem; /* Ajusta según sea necesario */
+    left: 0; /* Ajusta según sea necesario */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 10px;
+    width: 100%;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu archivo CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Mi Página Web</title>
+</head>
+<body>
+    <div class="login-container" id="loginContainer">
+        <form class="form-login-container" id="loginForm" action="#" method="post"> <!-- Puedes especificar la acción y el método según tus necesidades -->
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label id="contraseña" for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="verficar()">Iniciar sesión</button>
+
+        </form>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
