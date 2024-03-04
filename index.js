@@ -97,16 +97,27 @@ function mostrarMensajeBienvenida() {
 
 function mostrarMensajeDeError() {
     
-    // Crear un elemento de mensaje de error
+    // Crear un contenedor para el mensaje de error
+    const mensajeContainer = document.createElement("div");
+     
+    // Darle una clase al contenedor
+    mensajeContainer.classList.add("error-container");
+
+
+    // Crear un elemento <p> de mensaje de error
     const mensajeDeError = document.createElement("p");
     mensajeDeError.textContent = "¡¡ Usuario o contraseña incorrectos !!";
-    
+       
     // Darle una clase al elemento <p> de error
     mensajeDeError.classList.add("error-message");
 
-    // Insertar el párrafo de mensaje de error después del botón de inicio de sesión
+
+    // Insertar el contenedor del mensaje de error después del botón de inicio de sesión
     const botonInicioSesion = document.querySelector("#loginContainer button");
-    botonInicioSesion.insertAdjacentElement('afterend', mensajeDeError);
+    botonInicioSesion.insertAdjacentElement('afterend', mensajeContainer);
+
+    // Agregar el mensaje de error al contenedor
+    mensajeContainer.appendChild(mensajeDeError);
 }
 
 
